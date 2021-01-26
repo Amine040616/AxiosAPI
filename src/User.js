@@ -1,27 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
-
 import './App.css';
 
 
-function User (){
+function User (data){
+    //const list = data.data;
+    console.log(data.data);
     return(
-        <div className="card">
+        
         
         <div className="descriptions">
             <div>
                 <div className='categYear'>
-                    <span>{phone}</span>
-                    <span>{date}</span>
-                </div>
+                    <span>{data.phone}</span>
+                    <span>date</span>
                     <img src={logo} alt='name' className="App-logo" />
-                    <h1>{name}</h1>
+                </div>
+                    
+                    <h1>{data.name}</h1>
 
-                    <p>{description}</p>
-                    <a href={details} target='_blank' rel="noreferrer">{Website}</a>
+                    <p>{data.email}</p>
+                    {/* <a href="#" target='_blank' rel="noreferrer">Website</a> */}
             </div>
         </div>
-        </div>
+        
     )
 }
 
