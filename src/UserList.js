@@ -14,7 +14,7 @@ function UserList (){
     /* ; console.log(listUsers); */
 
     return(
-        <div>
+        <div style={{width:'70%',display: 'flex',flexWrap :'wrap'}}>
             {listUsers.map((el,i)=> <User data={el} key={i}/>)}
         </div>
     )

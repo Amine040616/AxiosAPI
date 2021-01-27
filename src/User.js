@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 
-function User (data){
-    //const list = data.data;
+function User ({data}){
+    
     console.log(data.data);
     return(
         
@@ -12,15 +12,17 @@ function User (data){
         <div className="descriptions">
             <div>
                 <div className='categYear'>
-                    <span>{data.phone}</span>
-                    <span>date</span>
+                    <h1>{data.name[0]}{data.username[0]}</h1>
                     <img src={logo} alt='name' className="App-logo" />
                 </div>
-                    
-                    <h1>{data.name}</h1>
-
-                    <p>{data.email}</p>
+                <div className='categDet'>
+                    <h2>{data.name}</h2>
+                    <h3>Username : {data.username}</h3>
+                    <span>Phone number : {data.phone}</span>
+                    <p>Email : {data.email}</p>
                     {/* <a href="#" target='_blank' rel="noreferrer">Website</a> */}
+                </div>
+                    
             </div>
         </div>
         

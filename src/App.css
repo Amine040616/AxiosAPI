@@ -3,9 +3,13 @@
 }
 
 .App-logo {
-  height: 14vmin;
+  z-index: 5;
+  height: 30vmin;
   pointer-events: none;
   opacity: .2;
+  position: absolute;
+  top: 25px;
+  right: 2px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -48,6 +52,7 @@
   -moz-box-shadow: 3px -1px 21px 0px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   position: relative;
+  margin : 100px 10px 10px;
 }
 .categYear{
   width: 150px;
@@ -57,4 +62,13 @@
   position:absolute;
   top: -75px;
   left: 75px;
+}
+
+.categYear h1{
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.categDet{
+  margin-top: 100px;
 }
