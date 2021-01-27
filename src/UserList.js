@@ -1,6 +1,6 @@
 import React, { useState, useEffect  } from 'react';
-import axios from 'axios';
 import User from './User';
+import axios from 'axios';
 
 function UserList (){
 
